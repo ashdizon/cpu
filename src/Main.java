@@ -11,8 +11,8 @@ public class Main {
 
         // REG Y + number Z -> REG X
         // 0000 0xxx xyyy y1zz zzzz zzzz zzzz zzzz
-        // 0000 0000 1000 0100 0000 0000 0000 0001
-        // Reg Y (0) + 1 -> store into Reg 1
+        // 0000 0000 1000 0100 0000 0000 0000 0010
+        // Reg Y (0) + 2 -> store into Reg 1
         testRam.Write(0, 0b00000000100001000000000000000010); // write add instruction
         // should expect register 1 to have the value 2
 
